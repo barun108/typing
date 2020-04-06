@@ -3,6 +3,12 @@
         <div class="coumn is-one-third">
             <h1 class="title has-text-centered">Typing Challenge</h1>
             <p class="has-text-centered">
+
+            <!--Adding different class to letters programmatically-->
+            <!--
+               -Also alll the generated random tesxts are shown in span 
+               -to show assign them different classes
+               -->
             <span [class]="compare(letter, enteredText[i])" *ngFor="let letter of randomText.split(''); let i = index;">{{ letter }}</span>
             </p>
             <div class="field">
