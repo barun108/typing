@@ -1,19 +1,37 @@
-.myContainer {
-    max-width: 60%;
-    padding: 2rem;
-    margin: 20px auto 0 auto;
-    background-color: #f7f7f7;
-    border-radius: 8px;
+.center {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/*
+ *.myContainer {
+ *    max-width: 60%;
+ *    padding: 2rem;
+ *    margin: 20px auto 0 auto;
+ *    background-color: #f7f7f7;
+ *    border-radius: 8px;
+ *}
+ */
 .pending {
-    color: #3d5afe;
+    color: #ffab00;
 }
 
 .correct {
-    color: #76ff03;
+    color: #52b202;
     font-weight: bold;
 }
 
 .incorrect {
     color: #ff1744;
+}
+
+.f1 {
+    font-family: 'Merriweather', serif;
+    font-size: 46px;
+}
+
+.f2 {
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
 }

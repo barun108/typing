@@ -1,38 +1,22 @@
-<div
-  style="margin-top: 30px;font-family: 'Baloo Da 2', cursive;"
-  class="container"
->
-  <div class="myContainer">
-    <div class="columns is-centered">
-      <div class="coumn is-one-third">
-        <h1 class="title has-text-centered">Typing Challenge</h1>
-        <p class="has-text-centered">
-          <!--Adding different class to letters programmatically-->
-          <!--
-               -Also alll the generated random tesxts are shown in span 
-               -to show assign them different classes
-               -->
-          <span
-            [class]="compare(letter, enteredText[i])"
-            *ngFor="let letter of randomText.split(''); let i = index"
-            >{{ letter }}</span
-          >
-        </p>
-        <div class="field">
-          <input
-            class="input"
-            (input)="onInput($event.target.value)"
-            type="#"
-          />
-        </div>
-        <div
-          style="margin-top: 15px;"
-          *ngIf="randomText === enteredText"
-          class="box has-text-centered"
-        >
-          <h1 class="title">Success!</h1>
-        </div>
-      </div>
+<div class="column is-centered center">
+  <div class="box column is-one-third ">
+    <h1 class="title has-text-centered f1">Typing Challenge</h1>
+    <p class="has-text-centered f2">
+      <span
+        [class]="compare(letter, enteredText[i])"
+        *ngFor="let letter of randomText.split(''); let i = index"
+        >{{ letter }}</span
+      >
+    </p>
+    <div class="field f2">
+      <input class="input" (input)="onInput($event.target.value)" type="#" />
+    </div>
+    <div
+      style="margin-top: 15px;"
+      *ngIf="randomText === enteredText"
+      class="box has-text-centered"
+    >
+      <h1 class="title f1 has-text-success">Success!</h1>
     </div>
   </div>
 </div>
